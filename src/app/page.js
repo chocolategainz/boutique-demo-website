@@ -1,12 +1,12 @@
 
 export default function Home() {
   return (
-    <div className="nav-bar flex justify-center justify-evenly">
+    <div class="navbar flex justify-center justify-evenly bg-cyan-500">
       {/*Logo*/}
-    <div>Tops</div>
-    <div>Dresses</div>
-    <div>Denim</div>
-    <div>New Collection</div>
+    <a href =".Tops">Tops</a>
+    <a href =".Dresses">Dresses</a>
+    <a href =".Denim">Denim</a>
+    <a href =".New Collection">New Collections</a>
     </div>
   );
 }
