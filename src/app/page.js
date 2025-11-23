@@ -11,9 +11,7 @@ export default function Home() {
     <a href ="#Denim">Denim</a>
     <a href ="#New-Collection">New Collections</a>
     </nav>
-    <div className = "video">
-      <Video />
-    </div>
+     <Video /> 
     </div>
   );
 }
