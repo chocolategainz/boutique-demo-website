@@ -1,5 +1,7 @@
 import Video from "./video-player";
 import Image from "next/image";
+import Section from "./Section";
+
 export default function Home() {
   return (
     <div className="Home">
@@ -23,7 +25,8 @@ export default function Home() {
          <li>Secure Payments</li>
           <li>Quality Guarantee</li>
      </ul>
-
+{/*Main*/}
+<Section />
      </div>
      
   
