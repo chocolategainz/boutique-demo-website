@@ -15,6 +15,17 @@ export default function Home() {
     <a href ="#New-Collection">New Collections</a>
     </nav>
      <Video /> 
-    </div>
+     {/* Unique Selling Point Banner - U.S.P.B. */}
+     <ul className="parent-banner flex justify-evenly font-medium text-lg p-4">
+      <li>Free Shipping</li>
+       <li>24/7 Support</li>
+        <li>Free Returns</li>
+         <li>Secure Payments</li>
+          <li>Quality Guarantee</li>
+     </ul>
+
+     </div>
+     
+  
   );
 }
