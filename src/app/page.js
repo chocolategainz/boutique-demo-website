@@ -2,8 +2,7 @@ import Video from "./video-player";
 import Image from "next/image";
 import Section from "./Section";
 import Flipcard from "./Flipcard";
-import FlipcardTwo from "./Flipcard-two";
-import FlipcardThree from "./Flipcard-three";
+
 
 export default function Home() {
   return (
