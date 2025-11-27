@@ -7,7 +7,7 @@ export default function Home() {
     <div className="Home">
 {/*Logo*/}
 <div className="logo flex align-center justify-center"> {/*Flex only works on parent containers */}
-   <Image src = "/dream-tank-studios-logo.jpg" width={150} height={150} alt="picture of logo"/>
+   <Image src = "/Adobe Express - file-Perfect Logo Done.svg" width={180} height={180} alt="picture of logo" />
 </div>
 {/*Navbar*/}
     <nav className="navbar flex font-medium text-lg  p-6 justify-evenly">
@@ -26,7 +26,11 @@ export default function Home() {
           <li>Quality Guarantee</li>
      </ul>
 {/*Main*/}
-<Section />
+
+<Section image="/Vintage fashion with classic accessories outdoors-front.jpg"
+imageTwo="/Vintage fashion with classic accessories outdoors-back.jpg"
+/>
+
      </div>
      
   
