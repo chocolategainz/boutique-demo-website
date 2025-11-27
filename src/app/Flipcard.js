@@ -1,8 +1,8 @@
 "use client";
 
-export default function Section({image, imageTwo }) {
+export default function Flipcard({image, imageTwo }) {
     return (
-<div className="Section">
+<div className="Flipcard">
 {/*Hover Elements*/}
 <div className="group w-72 h-96 [perspective:1000px]">
 <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
