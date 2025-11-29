@@ -9,7 +9,7 @@ export default function Home() {
     <div className="Home">
 {/*Logo*/}
 <div className="logo flex align-center justify-center"> {/*Flex only works on parent containers */}
-   <Image src = "/SVG file-01.svg" width={180} height={180} alt="picture of logo" />
+   <Image src = "/Adobe Express - file-Perfect Logo Done.png" width={180} height={180} alt="picture of logo" />
 </div>
 {/*Navbar*/}
     <nav className="navbar flex font-medium text-lg  p-6 justify-evenly">
