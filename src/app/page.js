@@ -1,6 +1,6 @@
 import Video from "./video-player";
 import Image from "next/image";
-import Section from "./Section";
+
 import Flipcard from "./Flipcard";
 
 
@@ -28,18 +28,6 @@ export default function Home() {
           <li>Quality Guarantee</li>
      </ul>
 {/*Main*/}
-  <h2 className="title font-medium text-lg p-4 flex justify-center">Top Monthly Sellers</h2>
-
-  <div className="category flex align-center justify-evenly">
-<Section image="/Vintage fashion with classic accessories outdoors-front.jpg"
-imageTwo="/Vintage fashion with classic accessories outdoors-back.jpg"
-/>
-<Flipcard image="Trendy fit young female athlete standing in studio with hand on waist-front.jpg" 
-imageTwo="/Trendy fit young female athlete standing in studio with hand on waist-back.jpg"/>
-
-<Flipcard image = "/Joyful Woman Posing Against Pink Background-front.jpg" 
-imageTwo="/Joyful Woman Posing Against Pink Background-back.jpg"/>  
-</div>
 
  <h2 className="title font-medium text-lg flex justify-center">Blouses</h2>
 
@@ -85,7 +73,11 @@ imageTwo="/model_posing_while_wearing_burgundy_coloured_satin-loungewear-two.png
 imageTwo = "/model_posing_while_wearing_sapphire_coloured_satin-loungewear-two.png"
 />
 </div>
-
+{/* New Collection */}
+<nav className="discount-code flex justify-center font-medium text-lg  p-6">
+  CLAIM YOUR 25% OFF DISCOUNT CODE: L2CA469
+</nav>
+{/* Footer */}
      </div>
   );
 }
