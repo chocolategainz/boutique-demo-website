@@ -13,9 +13,9 @@ export default function Home() {
 </div>
 {/*Navbar*/}
     <nav className="navbar flex font-medium text-lg  p-6 justify-evenly">
-    <a href ="#Tops">Tops</a>
+    <a href ="#Tops">Blouses</a>
     <a href ="#Dresses">Dresses</a>
-    <a href ="#Denim">Denim</a>
+    <a href ="#Denim">Loungewear & Pyjamas</a> {/* Satin & Silk */}
     <a href ="#New-Collection">New Collections</a>
     </nav>
      <Video /> 
@@ -41,22 +41,50 @@ imageTwo="/Trendy fit young female athlete standing in studio with hand on waist
 imageTwo="/Joyful Woman Posing Against Pink Background-back.jpg"/>  
 </div>
 
- <h2 className="title font-medium text-lg flex justify-center">Denim</h2>
+ <h2 className="title font-medium text-lg flex justify-center">Blouses</h2>
 
 <div className="category flex align-center justify-evenly">
-<Flipcard image = "/A woman with curly hair wearing denim-front.jpg" 
-imageTwo="/A woman with curly hair seated-back.jpg" />
+<Flipcard image = "/model_wearing_a_light_gold_satin_silk_blouse-one.png" 
+imageTwo="/model_wearing_a_light_gold_satin_silk_blouse_two.png" />
 
-<Flipcard image = "/Blond Woman Wearing Jeans and Leather Jacket Standing at Entrance to Old Building-front.jpg"
-imageTwo="/Fashion Female Model Wearing Jeans and Leather Jacket Standing at Old Building Facade-back.jpg"
+<Flipcard image = "/model_wearing_a_burgundy_satin_silk_blouse_one.png"
+imageTwo="/model_posing_while_wearing_a_burgundy_satin_silk-two.png"
 />
 
-<Flipcard image = "/Woman In Black Long-sleeved Shirt And Blue Denim Skirt-front.jpg" 
-imageTwo = "/Woman In Black Long-sleeved Shirt And Blue Denim Skirt-back.jpg"
+<Flipcard image = "/model_posing_while_wearing_a_sapphire-coloured_one.png" 
+imageTwo = "/model_posing_while_wearing_a_sapphire-coloured_two.png"
 />
 </div>
 
+<h2 className="title font-medium text-lg flex justify-center">Dresses</h2>
 
+<div className="category flex align-center justify-evenly">
+<Flipcard image = "/model_posing_while_wearing_a_light-gold_coloured__dress-one.png" 
+imageTwo="/model_posing_while_wearing_a_light-gold_coloured__dress-two.png" />
+
+<Flipcard image = "/model_posing_while_wearing_a_burgundy-coloured_dress-one.png"
+imageTwo="/model_posing_while_wearing_a_burgundy-coloured_dress-two.png"
+/>
+
+<Flipcard image = "/model_posing_while_wearing_a_sapphire-coloured_dress-one.png" 
+imageTwo = "/model_posing_while_wearing_a_sapphire-coloured-two.png"
+/>
+</div>
+
+<h2 className="title font-medium text-lg flex justify-center">Loungewear & Pyjamas</h2>
+
+<div className="category flex align-center justify-evenly">
+<Flipcard image = "/model_posing_while_wearing_light-gold_coloured_loungewear.png" 
+imageTwo="/model_posing_while_wearing_light-gold_coloured_sa_loungewear2.png" />
+
+<Flipcard image = "/model_posing_while_wearing_burgundy_coloured_satin-loungewear-one.png"
+imageTwo="/model_posing_while_wearing_burgundy_coloured_satin-loungewear-two.png"
+/>
+
+<Flipcard image = "/model_posing_while_wearing_sapphire_coloured_satin-loungewear-one.png" 
+imageTwo = "/model_posing_while_wearing_sapphire_coloured_satin-loungewear-two.png"
+/>
+</div>
 
      </div>
   );
