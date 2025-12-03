@@ -12,7 +12,7 @@
   transform: scale(0);
   opacity: 0.3;
   pointer-events: none;
-  animation: rippleExpand 0.8s ease-out forwards;
+  animation: revealRipple 0.8s ease-out forwards;
 }
 
 @keyframes revealRipple {

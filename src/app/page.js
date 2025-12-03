@@ -1,7 +1,9 @@
-import Video from "./video-player";
+"use client";
+//import Video from "./video-player";
 import Image from "next/image";
 import Flipcard from "./Flipcard";
-import RippleEffect from "./RippleEffect";
+//import RippleEffect from "./RippleEffect";
+import Carousel from "./Carousel";
 
 
 
@@ -21,10 +23,10 @@ export default function Home() {
     </nav>
 
     {/* Video Player */}
-    <RippleEffect>
-     <Video /> 
-    </RippleEffect>
-     
+    <Carousel />
+
+ {/**<Video /> */} 
+
 
      {/* Unique Selling Point Banner - U.S.P.B. */}
      <ul className="parent-banner flex justify-evenly font-medium text-lg p-4">

@@ -1,7 +1,9 @@
+'use client';
+import {useRef} from "react";
 import styles from './ripple-transition.module.css';
 
-export default function RippleEffect({items}) {
-    const [index , setIndex]= useState(0);{/* inital value */} {/* This is a useEffect React hook. useState in React allows a component to manage its own state. So when an action occurs the component re-renders due to the update of its state.  */}
+export default function RippleEffect({children , onReveal}) {
+    //const [index , setIndex]= useState(0); inital value. This is a useEffect React hook. useState in React allows a component to manage its own state. So when an action occurs the component re-renders due to the update of its state.  
     const containerRef = useRef(null); {/* useRef is a value that will always persist/remian unchanged regardless of whether the component re-renders, but it can be changed manually at any point. Null indicates that the useRef object is not targeting something specific throughout the code*/}
 
 const handleClick = (e) => {
@@ -32,7 +34,7 @@ setTimeout(() => circle.remove(), 800);
 };
 
     return (
-<div ref={containerRef} className={styles.container} onclick={handleClick}>
+<div ref={containerRef} className={styles.container} onClick={handleClick}>
 
  {children}
     
