@@ -1,6 +1,7 @@
 'use client';
 import {useRef} from "react";
 import styles from './ripple-transition.module.css';
+import {gsap} from "gsap";
 
 export default function RippleEffect({children , onReveal}) {
     //const [index , setIndex]= useState(0); inital value. This is a useEffect React hook. useState in React allows a component to manage its own state. So when an action occurs the component re-renders due to the update of its state.  
@@ -26,9 +27,13 @@ const handleClick = (e) => {
 
     //Code to reveal next multimedia content after the ripple fades out
 if (onReveal) {
-    setTimeout(() => onReveal(), 300);//animation time in ms
+    gsap.to(circle, {
+        scale:1,
+        opacity: 0,
+        duration: 0.8,
+        onComplete: () => onReveal(),
+    });//animation time in ms
 }
-
 //removes effect after animation ends
 setTimeout(() => circle.remove(), 800);
 };
