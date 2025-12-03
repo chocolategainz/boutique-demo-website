@@ -16,7 +16,7 @@ export default function Home() {
    <a href ="#New">New Collections</a> 
    <a href ="#Blouses">Blouses</a>
     <a href ="#Dresses">Dresses</a>
-    <a href ="#Loungewear">Loungewear & Pyjamas</a> {/* Satin & Silk */}
+    <a href ="#Loungewear">Loungewear & Pyjamas</a> 
     
     </nav>
      <Video /> 
