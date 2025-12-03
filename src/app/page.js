@@ -13,10 +13,11 @@ export default function Home() {
 </div>
 {/*Navbar*/}
     <nav className="navbar flex font-medium text-lg  p-6 justify-evenly">
-    <a href ="#Tops">Blouses</a>
+   <a href ="#New">New Collections</a> 
+   <a href ="#Blouses">Blouses</a>
     <a href ="#Dresses">Dresses</a>
-    <a href ="#Denim">Loungewear & Pyjamas</a> {/* Satin & Silk */}
-    <a href ="#New-Collection">New Collections</a>
+    <a href ="#Loungewear">Loungewear & Pyjamas</a> {/* Satin & Silk */}
+    
     </nav>
      <Video /> 
      {/* Unique Selling Point Banner - U.S.P.B. */}
@@ -78,6 +79,24 @@ imageTwo = "/model_posing_while_wearing_sapphire_coloured_satin-loungewear-two.p
   CLAIM YOUR 25% OFF DISCOUNT CODE: L2CA469
 </nav>
 {/* Footer */}
+<footer>
+  <div className="">
+    <h5>About</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Curabitur a est pharetra, ultricies elit nec, bibendum justo. 
+    </p>
+
+<h5>Quick links</h5>
+<a href ="#New">New Collections</a>
+<a href ="#Blouses">Blouses</a>
+<a href ="#Dresses">Dresses</a>
+<a href ="#Loungewear">Loungewear & Pyjamas</a>
+  </div>
+
+  <h2>
+  <a href="#2025-Aaron-Thomas">&copy; 2025 Aaron Thomas</a> - <a href = "#official-website">Website built by Dream Tank Studios</a>
+</h2>
+</footer>
      </div>
   );
 }
