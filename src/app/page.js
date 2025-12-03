@@ -22,6 +22,7 @@ export default function Home() {
     <a href ="#Loungewear">Loungewear & Pyjamas</a> 
     </nav>
 
+ 
     {/* Video Player */}
     <Carousel />
 

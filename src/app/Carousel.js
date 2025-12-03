@@ -4,7 +4,7 @@ import RippleEffect from './RippleEffect';
 import Media from "./Media";
 
 export default function Carousel() {
-  const media = ['./Light Satin Dresses.mp4', './short-satin-skirt.mp4', './discount-on-all-gold-satin-dresses.png'];
+  const media = ['./Light Satin Dresses.mp4', './satin-heels-new-collections.mp4', './discount-on-all-gold-satin-dresses.png'];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToNextSlide = () => {
