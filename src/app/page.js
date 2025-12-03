@@ -1,7 +1,8 @@
 import Video from "./video-player";
 import Image from "next/image";
-
 import Flipcard from "./Flipcard";
+import RippleEffect from "./RippleEffect";
+
 
 
 export default function Home() {
@@ -17,9 +18,14 @@ export default function Home() {
    <a href ="#Blouses">Blouses</a>
     <a href ="#Dresses">Dresses</a>
     <a href ="#Loungewear">Loungewear & Pyjamas</a> 
-    
     </nav>
+
+    {/* Video Player */}
+    <RippleEffect>
      <Video /> 
+    </RippleEffect>
+     
+
      {/* Unique Selling Point Banner - U.S.P.B. */}
      <ul className="parent-banner flex justify-evenly font-medium text-lg p-4">
       <li>Free Shipping</li>

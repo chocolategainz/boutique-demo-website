@@ -1,0 +1,38 @@
+.rippleEffect {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rippleEffect img,
+.rippleEffect video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ripple-transition {
+  position: absolute;
+  border-radius: 50%;
+  background: white; /* or match your brand */
+  transform: scale(0);
+  opacity: 0.3;
+  animation: revealRipple 0.8s ease-out forwards;
+  pointer-events: none;
+}
+
+@keyframes revealRipple {
+  0% {
+    transform: scale(0);
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(40); /* covers full viewport */
+    opacity: 0;
+  }
+}
