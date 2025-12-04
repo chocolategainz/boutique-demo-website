@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Media from "./Media";
 
+
 export default function Carousel() {
   const media = [
     './Light Satin Dresses.mp4',

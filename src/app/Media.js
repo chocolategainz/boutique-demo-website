@@ -4,6 +4,6 @@ export default function Media({ src }) {
   if (isVideo) {
     return <video src={src} autoPlay muted loop className="w-screen h-[84vh] object-cover" />;
   } else {
-    return <img src={src} alt="carousel media" className="w-screen h-[84vh] object-cover" />;
+    return <img src={src} alt="carousel media" draggable= "false" className="w-screen h-[84vh] object-cover select-none pointer-events-none" />;
   }
 }
