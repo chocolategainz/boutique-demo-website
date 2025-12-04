@@ -1,15 +1,15 @@
-'use client';
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useRef, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Media from "./Media";
 
 export default function Carousel() {
   const media = [
     './Light Satin Dresses.mp4',
     './satin-heels-new-collections.mp4',
-    './woman-wearing-white-robe-on-laptop.jpg'
+    './discount-on-all-gold-satin-dresses.webp'
   ];
 
+  const carouselRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToNextSlide = () => {
@@ -22,29 +22,31 @@ export default function Carousel() {
 
   const handleDragEnd = (_event, info) => {
     const swipe = info.offset.x;
-    if (swipe < -200) goToNextSlide();   // swipe left
-    if (swipe > 200) goToPrevSlide();    // swipe right
+
+    if (swipe < -50) goToNextSlide(); // swipe left
+    if (swipe > 50) goToPrevSlide();  // swipe right
   };
 
   return (
-    <div style={{ overflow: 'hidden', position: 'relative', width: '100%' }}>
-      <AnimatePresence initial={false} mode="wait">
+    <div className="carousel-container" style={{ overflow: 'hidden', position: 'relative', width: '100%' }}>
+      <AnimatePresence initial={false}>
         <motion.div
           key={currentIndex}
+          ref={carouselRef}
           drag="x"
-          dragConstraints={{ left: 0, right: 0 }}
+          dragConstraints={{ left: -window.innerWidth, right: window.innerWidth }} // full-width drag
           onDragEnd={handleDragEnd}
           style={{ cursor: "grab" }}
-          initial={{ opacity: 0, x: 300 }}      // start off to the right and invisible
-          animate={{ opacity: 1, x: 0 }}        // animate into center
-          exit={{ opacity: 0, x: -300 }}        // exit to the left
-          transition={{ type: "spring", stiffness: 200, damping: 30 }}
+          initial={{ x: 300, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          exit={{ x: -300, opacity: 0 }}
+          transition={{ type: "spring", stiffness: 200, damping: 30 }} // smooth animation
         >
           <Media src={media[currentIndex]} />
         </motion.div>
       </AnimatePresence>
 
-      {/* BUTTONS */}
+      {/* Optional buttons */}
       <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '1rem' }}>
         <button onClick={goToPrevSlide}>Prev</button>
         <button onClick={goToNextSlide}>Next</button>

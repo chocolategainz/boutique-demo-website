@@ -24,7 +24,7 @@ export default function Home() {
 
  
     {/* Video Player */}
-    <Carousel />
+    <Carousel/>
 
  {/**<Video /> */} 
 
