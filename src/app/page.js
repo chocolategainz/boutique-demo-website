@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 //import Video from "./video-player";
 import Image from "next/image";
 import Flipcard from "./Flipcard";
@@ -16,8 +17,8 @@ export default function Home() {
 </div>
 {/*Navbar*/}
     <nav className="navbar flex font-medium text-lg  p-6 justify-evenly">
-   <a href ="#New">New Collections</a> 
-   <a href ="#Blouses">Blouses</a>
+   <Link href ="#New">New Collections</Link> 
+   <Link href ="#Blouses">Blouses</Link>
     <a href ="#Dresses">Dresses</a>
     <a href ="#Loungewear">Loungewear & Pyjamas</a> 
     </nav>

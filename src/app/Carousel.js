@@ -6,10 +6,11 @@ import Media from "./Media";
 
 export default function Carousel() {
   const media = [
+    './u3814539668_Yellow_Gold_Satin_--ar_7758_--motion_low_--video__bd0e84be-4047-4162-bc11-d27a7d28343f_1.mp4', 
     './Light Satin Dresses.mp4',
-    './satin-heels-new-collections.mp4',
     './woman-wearing-white-robe-on-laptop.jpg'
   ];
+  
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
