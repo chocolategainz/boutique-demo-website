@@ -1,7 +1,0 @@
-/* CSS */
-.media-wrapper img,
-.media-wrapper video {
-  user-select: none;    /* Prevent selecting the image/video */
-  pointer-events: none; /* Let the parent motion.div handle drag */
-  -webkit-user-drag: none; /* Safari/Chrome native drag */
-}

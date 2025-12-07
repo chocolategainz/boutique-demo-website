@@ -11,14 +11,17 @@ import Carousel from "./Carousel";
 export default function Home() {
   return (
     <div className="Home">
-{/*Logo*/}
+{/*Logo- Home Button*/}
+<Link href="/">
 <div className="logo flex align-center justify-center"> {/*Flex only works on parent containers */}
-   <Image src = "/Adobe Express - file-Perfect Logo Done.png" width={180} height={180} alt="picture of logo" />
+<Image src = "/Adobe Express - file-Perfect Logo Done.png" width={180} height={180} alt="picture of logo" />
 </div>
+</Link>
+
 {/*Navbar*/}
     <nav className="navbar flex font-medium text-lg  p-6 justify-evenly">
-   <Link href ="#New">New Collections</Link> 
-   <Link href ="#Blouses">Blouses</Link>
+   <Link href ="/New">New Collections</Link> 
+   <Link href ="/Blouses">Blouses</Link>
     <a href ="#Dresses">Dresses</a>
     <a href ="#Loungewear">Loungewear & Pyjamas</a> 
     </nav>
