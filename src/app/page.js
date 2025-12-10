@@ -17,11 +17,11 @@ export default function Home() {
 
 {/*Logo- Home Button*/}      
 <Link className="logo dm-serif-text-regular flex justify-center" href="/">Satin Boutiques</Link>
-<Link className="subtitle flex justify-center" href="/">Look Good. Feel Good.</Link>
+<Link className="subtitle flex justify-center" href="/">Look Good. Look Good.</Link>
 
 
 {/*Navbar*/}
-    <nav className="navbar flex font-medium text-lg  p-6 justify-evenly bg[]">
+    <nav className="navbar flex font-medium text-lg  p-6 justify-evenly">
    <Link href ="/New">New Collections</Link> 
    <Link href ="/Blouses">Blouses</Link>
     <a href ="#Dresses">Dresses</a>

@@ -9,9 +9,9 @@ export default function Carousel() {
   {/*We must make an array of objects describing the src, title, subtitle, button, and link */}
   const slideshow = [
     {
-src: './Three_women_wearing_a_burgundy_sapphire_and_yellow.png',
+src: './midjourney-editor-Three-women-sipping-champagne-horizontal.png',
 title: 'Shop Now',
-descripton: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a est pharetra, ultricies elit nec, bibendum justo.',
+subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a est pharetra, ultricies elit nec, bibendum justo.',
 button: 'Shop Now',
 link: '/shop'
     },
@@ -54,8 +54,8 @@ link: '/shop'
 
   const handleDragEnd = (_event, info) => {
     const swipe = info.offset.x;
-    if (swipe < -200) goToNextSlide();   // swipe left
-    if (swipe > 200) goToPrevSlide();    // swipe right
+    if (swipe < -140) goToNextSlide();   // swipe left
+    if (swipe > 140) goToPrevSlide();    // swipe right
   };
 
 
@@ -79,11 +79,12 @@ const currentSlide = slideshow[currentIndex];
     <Media src={currentSlide.src} />
 
 {/*Overlay Text & CTA */}
-<div className=' absolute top-1/2 left-10 -translate-y-1/2 text-white max-w-sm'>
- <h2 className='text-3x1 font-bold mb-2 drop-shadow-lg'>
+<div className='absolute left-10 top-120 -translate-y-1/2  max-w-sm'>
+
+ <h2 className='text-3xl mb-2 drop-shadow-lg' id='title'>
   {currentSlide.title}
  </h2>
- <p className='text-lg mb-4 drop-shadow-md'>
+ <p className='text-lg text-2x1 mb-4 drop-shadow-md font-bold'>
   {currentSlide.subtitle}
  </p>
  <a href={currentSlide.link} className='inline-block px-6 py-3 bg-white text-black font-medium rounded-lg shadow-lg hover:bg-gray-200 transition'>
