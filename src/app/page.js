@@ -1,25 +1,27 @@
 "use client";
 import Link from "next/link";
 //import Video from "./video-player";
-import Image from "next/image";
 import Flipcard from "./Flipcard";
 //import RippleEffect from "./RippleEffect";
 import Carousel from "./Carousel";
 
 
 
+
 export default function Home() {
   return (
     <div className="Home">
-{/*Logo- Home Button*/}
-<Link href="/">
-<div className="logo flex align-center justify-center"> {/*Flex only works on parent containers */}
-<Image src = "/Adobe Express - file-Perfect Logo Done.png" width={180} height={180} alt="picture of logo" />
-</div>
-</Link>
+
+ {/*Flex only works on parent containers Change logo 
+<Image src = "/Adobe Express - file-Perfect Logo Done.png" width={180} height={180} alt="picture of logo" />*/}
+
+{/*Logo- Home Button*/}      
+<Link className="logo dm-serif-text-regular flex justify-center" href="/">Satin Boutiques</Link>
+<Link className="subtitle flex justify-center" href="/">Look Good. Feel Good.</Link>
+
 
 {/*Navbar*/}
-    <nav className="navbar flex font-medium text-lg  p-6 justify-evenly">
+    <nav className="navbar flex font-medium text-lg  p-6 justify-evenly bg[]">
    <Link href ="/New">New Collections</Link> 
    <Link href ="/Blouses">Blouses</Link>
     <a href ="#Dresses">Dresses</a>
@@ -48,7 +50,7 @@ export default function Home() {
 <div className="category flex align-center justify-evenly">
 <Flipcard image = "/model_wearing_a_light_gold_satin_silk_blouse-one.png" 
 imageTwo="/model_wearing_a_light_gold_satin_silk_blouse_two.png" />
-
+{/**Below each item on my homepage - A more info button should be present */}
 <Flipcard image = "/model_wearing_a_burgundy_satin_silk_blouse_one.png"
 imageTwo="/model_posing_while_wearing_a_burgundy_satin_silk-two.png"
 />
