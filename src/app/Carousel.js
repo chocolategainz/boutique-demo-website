@@ -90,12 +90,13 @@ const currentSlide = slideshow[currentIndex];
  <a href={currentSlide.link} className='inline-block px-6 py-3 bg-white text-black font-medium rounded-lg shadow-lg hover:bg-gray-200 transition'>
   {currentSlide.button}
  </a>
+
 </div>
 </motion.div>
     </AnimatePresence>
 
       {/* BUTTONS */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '1rem' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-evenly', marginTop: '1rem' }}>
         <button onClick={goToPrevSlide}>Prev</button>
         <button onClick={goToNextSlide}>Next</button>
       </div>
