@@ -17,15 +17,15 @@ export default function Home() {
 
 {/*Logo- Home Button*/}      
 <Link className="logo dm-serif-text-regular flex justify-center" href="/">Satin Boutiques</Link>
-<Link className="subtitle flex justify-center" href="/">Look Good. Look Good.</Link>
+<Link className="subtitle flex justify-center" href="/">Look Good. Feel Good.</Link>
 
 
 {/*Navbar*/}
     <nav className="navbar flex font-medium text-lg  p-6 justify-evenly">
-   <Link href ="/New">New Collections</Link> 
-   <Link href ="/Blouses">Blouses</Link>
-    <a href ="#Dresses">Dresses</a>
-    <a href ="#Loungewear">Loungewear & Pyjamas</a> 
+   <Link className = "bg-[#FBEEDF] px-14 py-1" href ="/New">New Collections</Link> 
+   <Link className = "bg-[#FBEEDF] px-24 py-1" href ="/Blouses">Blouses</Link>
+    <Link className = "bg-[#FBEEDF] px-24 py-1" href ="#Dresses">Dresses</Link>
+    <Link className = "bg-[#FBEEDF] px-14 py-1" href ="#Loungewear">Loungewear & Pyjamas</Link> 
     </nav>
 
  
@@ -90,8 +90,8 @@ imageTwo = "/model_posing_while_wearing_sapphire_coloured_satin-loungewear-two.p
 />
 </div>
 {/* New Collection */}
-<nav className="discount-code flex justify-center font-medium text-lg  p-6">
-  CLAIM YOUR 25% OFF DISCOUNT CODE: L2CA469
+<nav className="discount-code flex justify-center font-medium text-lg p-6 ">
+ <p className="bg-[#FBEEDF] px-14 py-1">CLAIM YOUR 25% OFF DISCOUNT CODE: L2CA469 </p> 
 </nav>
 {/* Footer */}
 <footer>
